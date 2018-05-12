@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+#navigation .kontakt {
+    background-color: #393185;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    height: 10rem;
+    padding: 2.4rem;
+}
+
+#navigation #menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+}
+
+#navigation #menu i {
+    font-size: 1.8rem;
+    color: gray;
+}
+
+#navigation #menu i:hover {
+    cursor: pointer;
+}
+
+#navigation #menu img {
+    margin-right: 65px;
+    width: 115px;
+    height: 87px;
+}
+
+#navigation .card ul {
+    list-style: none;
+}
+
+#navigation .card ul li {
+    height: 40px;
+    font-size: 1.3rem;
+    color: gray;
+    padding: 10px 4px;
+    border-bottom: 0.5px dotted #bbb8b8;
+}
+
+#navigation .card ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    height: 300px;
+}
+
+.upToSlider {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: 173px;
+}
+
+.upToSlider h1 {
+    font-weight: 600;
+}
+
+.upToSlider button {
+    margin-top: 8px;
+    width: 85px;
+    height: 34px;
+    background-color: #393185;
+    color: white;
+    font-weight: 900;
+}
+
+.content {
+    background: #f7f6f6;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5.4rem;
+    padding: 17px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 18px 30px;
+    margin-bottom: 16px;
+}
+
+.separator {
+    border-bottom: 2px solid #ffb4b0;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.ofert h1 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding: 26px 0;
+}
+
+.ofert p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 31px 0;
+}
+
+.ofert .foto-group {
+    justify-content: center;
+    display: grid;
+}
+
+.ofert .foto {
+    justify-content: center;
+    display: grid;
+}
+
+.ofert .foto img {
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+}
+
+.ofert .foto p {
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.ofert button {
+    display: block;
+    width: 92px;
+    height: 47px;
+    border: 2px solid #393185;
+    border-radius: 9px;
+    background: transparent;
+    margin: 35px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #393185;
+}
+
+.galery {
+    padding: 17px 8px;
+    justify-content: center;
+    display: grid;
+    background: #f0f0f0;
+    width: 100%;
+
+}
+
+.galery img {
+    width: 71vw;
+    height: 71vw;
+    margin: 0 auto;
+}
+
+.galery-button {
+    display: block;
+    width: 179px;
+    height: 47px;
+    border: 2px solid #393185;
+    border-radius: 9px;
+    background: transparent;
+    margin: 31px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #393185;
+}
+
+.info p {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 19px 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.info2 {
+    background: url(http://www.arka-mk.pl/wp-content/uploads/2017/12/zd-liczby.jpg?id=697);
+    background-origin: inherit;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.info2 h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 25px;
+    font-weight: 700;
+}
+
+.info2 p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0;
+}
+
+footer {
+    background: #393185;
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    height: 150px;
+    padding: 15px;
+}
+.desktop-menu{
+    display: none;
+    
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .galery img {
+        width: 55vw;
+        height: 55vw;
+    }
+    .ofert .foto img {
+        width: 35vw;
+        height: 35vw;
+    }
+    .ofert button {
+        display: block;
+    }
+    .galery-button{
+        display: block;
+    }
+    .upToSlider {
+        top: 13%;
+    padding: 60px;
+    height: 223px;
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .ofert .foto img {
+        width: 18vw;
+        height: 18vw;
+    }
+    .ofert .foto-group {
+        display: flex;
+    }
+    .ofert button {
+        display: block;
+    }
+    .ofert .foto p {
+        font-size: 13px;
+        padding: 20px;
+    }
+    .galery{
+        display: flex;
+    }
+    .galery img{
+        width: 25vw;
+        height: 25vw;
+    }
+    .galery-button{
+        display: block;
+    }
+    .slider img{
+        height: 450px;
+    }
+    .upToSlider {
+        top: 18%;
+    padding: 53px;
+    height: 311px;
+    }
+    .upToSlider h1 {
+        font-size: 50px
+    }
+    
+    .upToSlider button {
+        width: 95px;
+        
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .ofert .foto img {
+        width: 23vw;
+        height: 22vw;
+    }
+    .slider img{
+        height: 550px;
+    }
+    .upToSlider {
+        top: 10%;
+        padding: 122px;
+        height: 411px;
+    }
+    .upToSlider p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #menu i{
+        display: none;
+    }
+    .collapse ul{
+        display: none;
+    }
+    .collapse li{
+        display: none;
+    }
+    .desktop-menu{
+        display: flex;
+        font-size: 15px;
+        list-style: none;
+    }
+    .desktop-menu li a{
+        color: black;
+        padding: 20px;
+    }
+
+}
